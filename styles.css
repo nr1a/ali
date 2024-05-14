@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f0ff; /* 薄い藤紫 */
+    color: #333333; /* テキスト色を濃いグレーに設定 */
+}
+
+header {
+    background-color: #e6e1f2; /* 薄い藤紫 */
+    color: #333333; /* ヘッダーのテキスト色を濃いグレーに設定 */
+    text-align: center;
+    padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 軽いシャドウを追加 */
+}
+
+main {
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+figure {
+    background-color: #ffffff; /* フィギュアの背景色を白に設定 */
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 0;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 軽いシャドウを追加 */
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666666; /* キャプションの色をグレーに設定 */
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #e6e1f2; /* フッターの背景色を薄い藤紫に設定 */
+    color: #333333; /* フッターのテキスト色を濃いグレーに設定 */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* 軽いシャドウを追加 */
+}
