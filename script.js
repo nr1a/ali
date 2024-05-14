@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('https://r2.nr1a.inc/urls.json')
+    fetch('https://r2.nr1a.inc/urls.json', { mode: 'no-cors' })
         .then(response => response.json())
         .then(images => {
             const gallery = document.getElementById('gallery');
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const img = document.createElement('img');
 
                 img.src = url;
-                img.alt = 'ai-illust';  // デフォルトのaltテキストを設定
+                img.alt = 'Uploaded Image';  // デフォルトのaltテキストを設定
 
                 figure.appendChild(img);
                 gallery.appendChild(figure);
