@@ -1,8 +1,11 @@
-import fetch from 'node-fetch';
-
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('https://r2.nr1a.inc/urls.json', { mode: 'no-cors' })
-        .then(response => response.json())
+    fetch('https://r2.nr1a.inc/urls.json', { mode: 'cors' })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
         .then(images => {
             const gallery = document.getElementById('gallery');
             images.forEach(url => {
