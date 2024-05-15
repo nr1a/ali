@@ -1,3 +1,5 @@
+import fetch from 'node-fetch';
+
 document.addEventListener('DOMContentLoaded', () => {
     fetch('https://r2.nr1a.inc/urls.json', { mode: 'no-cors' })
         .then(response => response.json())
